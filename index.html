@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie List</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body style="background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg); background-repeat: repeat-y;">
+        <div id="root" class="the-container">
+            <div class="banner">
+                <h1 class="banner-head">MyMovieList</h1>
+                <h2 class="sub-head">How versed are you in movies</h2>
+            </div>
+            <div class="self-search-container">
+                <form class="self-search-form">
+                    <textarea style="margin: 0 8%"class="have-i-seen" maxlength="280" placeholder="Have I seen..." cols="100" rows="1"></textarea>
+                </form>
+            </div>
+            <div class="movie-entry">
+                <div class="poster-container">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg" alt="Infinty War" width="150">
+                </div>
+                <div class="title-container">
+                    <p class="movie-title">Now you see me</p>
+                </div>
+                <div class="movie-info">
+                    <p class="movie-year">Year: ${movie.year}</p>
+                    <br>
+                    <p class='movie-rated'>Rated: ${movie.rated}</p>
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/axios/dist/axios.js"></script>
+        <script src="data.js"></script>
+        <script src="movielist.js" type="module"></script>
+    </body>
+</html>
