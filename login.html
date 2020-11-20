@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-in</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        <div class="sign-in-container">
+            <h1 id="login-header">Login</h1>
+            
+            <form id="login-form">
+              <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+              <br>
+              <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+              <br>
+              <button id="login-button">Login</button>
+            </form>
+
+            <div id="login-error-container">
+                <p id="login-error-msg">Invalid username and/or password</p>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.getElementById("login-button").addEventListener("click", function() {
+            alert('hi');
+        })
+    </script>
+</html>
