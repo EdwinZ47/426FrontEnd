@@ -15,6 +15,7 @@ function renderMovieEntry(movie){
             <p class="movie-year">Year: ${movie.Year}</p>
             <br>
             <p class='movie-rated'>Rated: ${movie.Rated}</p>
+            <button class="delete">Delete</button>
         </div>
     </div>
     `)

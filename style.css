@@ -1,5 +1,7 @@
 body {
     background-color: darkslategray;
+    margin: 0;
+    padding: 0;
 }
 
 .sign-in-container{
@@ -39,41 +41,53 @@ body {
     display: none;
 }
 
-.the-container{
-    display: grid;
-    background-color: lightcyan;
-    margin: 3% 20%;
-}
-
+/*These are for movielist*/
 .banner{
+    border: darkslategray solid;
 }
 
 .banner-head{
     text-align: center;
     font-size: 5em;
-    color: rgb(70, 140, 206);
+    color: rgb(68, 144, 214);
     text-shadow: 3px 3px 4px navy;
-    padding-bottom: 15px;
-    border-bottom: thick solid black;
+    margin-bottom: 0;
 }
 
 .sub-head{
     text-align: center;
-    padding-bottom: 15px;
-    border-bottom: thick solid black;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 4px navy;
+    font-style: italic;
+    font-size: 2em;
 }
 
-.movie-entry{
+.navigation-panel{
+    position: fixed;
+    top: 300px;
+    left: 15px;
+    width: 15%;
+    height: 15%;
+    background-color: lightcyan;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.movie-list-container{
     display: grid;
-    grid-template-columns: 150px auto 150px;
-    margin: 5px 15px 0px;
-    border-bottom: thin solid black;
+    background-color: lightcyan;
+    margin: 3% 20%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .list-header-container{
     display: grid;
     grid-template-columns: 150px auto 150px;
-    margin: 5px 15px 0px;
+    background-color: darkcyan;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .list-header{
@@ -86,6 +100,14 @@ body {
     text-align: center;
     color: burlywood;
 }
+
+.movie-entry{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    margin: 5px 15px 0px;
+    border-bottom: thin solid black;
+}
+
 
 .title-container{
     text-align: center;
@@ -105,13 +127,13 @@ body {
     font-family: fantasy;
 }
 
-#add-button{
-    margin-top: 15px;
-}
+
+/*These are for watchedsomething*/
 .search-container{
     text-align: center;
     margin: 3% 20%;
 }
+
 .search-result-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -125,4 +147,8 @@ body {
     align-content: center;
     text-align: center;
     margin-bottom: 25px;
+}
+
+.add-button{
+    margin-top: 15px;
 }

@@ -8,15 +8,23 @@
     </head>
     
     <body>
-        <div id="root" class="the-container">
-            <div class="banner" style="background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg); background-repeat: repeat-y;">
-                <h1 class="banner-head">MyMovieList</h1>
-                <div class="list-header-container">
-                    <h1 class="list-header">Completed Movies</h1>
-                    <h2>Poster</h2>
-                    <h2 style="border-left: thin solid black; border-right: thin solid black;">Title</h2>
-                    <h2>Rating</h2>
-                </div>
+        <div class="banner" style="background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg); background-repeat: repeat-y;">
+            <h1 class="banner-head">MyMovieList</h1>
+            <h2 class="sub-head">How much movie have you seen?</h2>
+        </div>
+
+        <div class="navigation-panel">
+            <p>Watched something new?</p>
+            <a href="watchedsomething.html"><button>Click me to add it!</button></a>
+            <i class="far fa-thumbs-up"></i>
+        </div>
+
+        <div id="root" class="movie-list-container">
+            <div class="list-header-container">
+                <h1 class="list-header">Completed Movies</h1>
+                <h2>Poster</h2>
+                <h2 style="border-left: thin solid black; border-right: thin solid black;">Title</h2>
+                <h2>Rating</h2>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
