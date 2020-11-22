@@ -46,7 +46,7 @@ export async function renderWatchedSomething(){
         let obj = {Title: arr[index].Title, Poster: arr[index].Poster, Liked: $(`.thoughts${index}`).val()}
         movieList.push(obj);
         $(`.add-button#button${index}`).replaceWith(`<p>Added!</p>`)
-        //console.log(movieList);
+        console.log(movieList);
         //axio here
 
     });

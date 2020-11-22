@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategray;
+    background-color: darkslategrey;
     margin: 0;
     padding: 0;
 }
@@ -41,6 +41,17 @@ body {
     display: none;
 }
 
+.navigation-panel{
+    position: fixed;
+    top: 300px;
+    left: 15px;
+    width: 15%;
+    background-color: beige;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
 /*These are for movielist*/
 .banner{
     border: darkslategray solid;
@@ -63,20 +74,9 @@ body {
     font-size: 2em;
 }
 
-.navigation-panel{
-    position: fixed;
-    top: 300px;
-    left: 15px;
-    width: 15%;
-    height: 15%;
-    background-color: lightcyan;
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-}
 .movie-list-container{
     display: grid;
-    background-color: lightcyan;
+    background-color: beige;
     margin: 3% 20%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -84,7 +84,7 @@ body {
 
 .list-header-container{
     display: grid;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: 170px auto 170px;
     background-color: darkcyan;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -110,7 +110,9 @@ body {
 
 
 .title-container{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
     font-size: x-large;
     font-family: fantasy;
 }
@@ -119,14 +121,29 @@ body {
     vertical-align: middle;
 }
 
-.movie-info{
+.movie-thoughts{
+    display: flex;
     position: relative;
-    top: 15%;
-    text-align: center;
-    font-size: medium;
-    font-family: fantasy;
+    justify-content: center;
 }
 
+.like-button, .dislike-button{
+    background-color: transparent;
+    outline-style: none;
+    /*height: fit-content;*/
+    border: none;
+    justify-self: center;
+}
+
+.like-button:hover, .dislike-button:hover{
+    cursor: pointer;
+} 
+
+.delete-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 /*These are for watchedsomething*/
 .search-container{
