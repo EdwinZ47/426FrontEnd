@@ -8,32 +8,44 @@ body {
     display: grid;
     padding: 5px;
     justify-items: center;
+    justify-content: center;
     background-color: white;
     border-radius: 7px;
     margin: 10% 30%;
     box-shadow: 0px 0px 5px 2px black;
 }
 
+#login-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
 #username-field{
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: rgb(236, 232, 232);
     padding: 5px;
     border-radius: 13px; 
-    margin: 5px;
     outline: none;
 }
 
 #password-field{
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: rgb(236, 232, 232);
     padding: 5px;
     border-radius: 13px;
-    margin: 5px;
     outline: none;
 }
 
-#login-button{
+#login-button, #register-button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: fit-content;
+    justify-self: center;
     border-radius: 13px;
     background-color: lightskyblue;
-    margin: 8px 30%;   
     outline: none; 
 }
 

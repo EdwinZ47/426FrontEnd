@@ -10,7 +10,7 @@
     <body>
         <div class="sign-in-container">
             <h1 id="login-header">Login</h1>
-            
+
             <form id="login-form">
               <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
               <br>
@@ -27,8 +27,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js"></script>
     <script>
-        document.getElementById("login-button").addEventListener("click", function() {
-            alert('hi');
+        document.getElementById("login-button").addEventListener("click", async function() {
+            event.preventDefault();
+            let user = document.getElementById("username-field").value;
+            let pw = document.getElementById("password-field").value;
+            
+            sessionStorage.setItem("user", user);
+            sessionStorage.setItem("password", pw);
+            console.log(sessionStorage.getItem("user"));
+            window.location.href = "index.html";
+            //axios here
         })
     </script>
 </html>

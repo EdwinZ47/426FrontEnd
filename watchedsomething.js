@@ -43,7 +43,7 @@ export async function renderWatchedSomething(){
 
     $(document).on("click", ".add-button", async function() {
         let index = this.dataset.buttonid;
-        let obj = {Title: arr[index].Title, Poster: arr[index].Poster, Liked: $(`.thoughts${index}`).val()}
+        let obj = {ID: arr[index].imdbID, Title: arr[index].Title, Poster: arr[index].Poster, Liked: $(`.thoughts${index}`).val()}
         movieList.push(obj);
         $(`.add-button#button${index}`).replaceWith(`<p>Added!</p>`)
         console.log(movieList);

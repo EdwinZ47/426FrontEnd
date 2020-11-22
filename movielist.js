@@ -2,6 +2,10 @@ async function getMovieFromDB(title){
     
 }
 
+function logout(){
+    sessionStorage.clear();
+    alert(sessionStorage.getItem("user"));
+}
 function renderLikeButton(like, ID){
     if(like){
         return(`
