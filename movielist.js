@@ -1,16 +1,20 @@
+async function getMovieFromDB(title){
+    
+}
+
 function renderMovieEntry(movie){
     return(`
     <div class="movie-entry" id="${movie.imdbID}">
         <div class="poster-container">
-            <img src="${movie.poster}" alt="Poster of ${movie.title}" width="150">
+            <img src="${movie.Poster}" alt="Poster of ${movie.Title}" width="150">
         </div>
         <div class="title-container">
-            <p class="movie-title">${movie.title}</p>
+            <p class="movie-title">${movie.Title}</p>
         </div>
         <div class="movie-info">
-            <p class="movie-year">Year: ${movie.year}</p>
+            <p class="movie-year">Year: ${movie.Year}</p>
             <br>
-            <p class='movie-rated'>Rated: ${movie.rated}</p>
+            <p class='movie-rated'>Rated: ${movie.Rated}</p>
         </div>
     </div>
     `)
@@ -18,7 +22,7 @@ function renderMovieEntry(movie){
 
 export async function render(movieExamples){
     const $root = $('#root');
-    //movieExamples.forEach(element => $root.append(renderMovieEntry(element)));
+    movieExamples.forEach(element => $root.append(renderMovieEntry(element)));
 }
 
 $(function() {

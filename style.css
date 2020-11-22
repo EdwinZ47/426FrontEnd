@@ -1,6 +1,7 @@
 body {
-    background-color: lightskyblue;
+    background-color: darkslategray;
 }
+
 .sign-in-container{
     display: grid;
     padding: 5px;
@@ -14,7 +15,7 @@ body {
 #username-field{
     background-color: rgb(236, 232, 232);
     padding: 5px;
-    border-radius: 13px;
+    border-radius: 13px; 
     margin: 5px;
     outline: none;
 }
@@ -40,36 +41,60 @@ body {
 
 .the-container{
     display: grid;
-    background-color: white;
+    background-color: lightcyan;
     margin: 3% 20%;
 }
 
 .banner{
-    background-color: lightseagreen;
 }
 
 .banner-head{
     text-align: center;
+    font-size: 5em;
+    color: rgb(70, 140, 206);
+    text-shadow: 3px 3px 4px navy;
+    padding-bottom: 15px;
+    border-bottom: thick solid black;
 }
 
 .sub-head{
     text-align: center;
+    padding-bottom: 15px;
+    border-bottom: thick solid black;
 }
 
 .movie-entry{
     display: grid;
     grid-template-columns: 150px auto 150px;
-    margin: 15px;
+    margin: 5px 15px 0px;
     border-bottom: thin solid black;
 }
 
+.list-header-container{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    margin: 5px 15px 0px;
+}
+
+.list-header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.list-header-container h2{
+    text-align: center;
+    color: burlywood;
+}
+
 .title-container{
-    position: relative;
-    top: 25%;
-    padding: 10px;
     text-align: center;
     font-size: x-large;
     font-family: fantasy;
+}
+
+.title-container .movie-title{
+    vertical-align: middle;
 }
 
 .movie-info{
@@ -78,4 +103,26 @@ body {
     text-align: center;
     font-size: medium;
     font-family: fantasy;
+}
+
+#add-button{
+    margin-top: 15px;
+}
+.search-container{
+    text-align: center;
+    margin: 3% 20%;
+}
+.search-result-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.search-result-entry{
+    background-color: beige;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 5px 5px gray;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 25px;
 }
