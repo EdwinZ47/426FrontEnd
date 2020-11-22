@@ -24,6 +24,14 @@
             <div id="login-error-container">
                 <p id="login-error-msg">Invalid username and/or password</p>
             </div>
+
+            <div id="registration-success-container">
+                <p id="successful-registration">You have registered! Click the Login button to login!</p>
+            </div>
+
+            <div id="registration-failed-container">
+                <p id="failed-registration">Registration failed! Please try a different username.</p>
+            </div>
         </div>
     </body>
 
@@ -36,13 +44,30 @@
 
             let user = document.getElementById("username-field").value;
             let pw = document.getElementById("password-field").value;
-            
             sessionStorage.setItem("user", user);
             sessionStorage.setItem("password", pw);
             console.log(sessionStorage.getItem("user"));
             //axios here
 
-            window.location.href = "movielist.html";
+            document.getElementById("login-error-container").style.display = "inline-block";
+
+            //window.location.href = "movielist.html";
+        })
+
+        document.getElementById("register-button").addEventListener("click", async function() {
+            event.preventDefault();
+            sessionStorage.clear();
+
+            let user = document.getElementById("username-field").value;
+            let pw = document.getElementById("password-field").value;
+            sessionStorage.setItem("user", user);
+            sessionStorage.setItem("password", pw);
+            console.log(sessionStorage.getItem("user"));
+            console.log(sessionStorage.getItem("password"));
+            //axios here
+
+            document.getElementById("registration-success-container").style.display = "inline-block";
+            document.getElementById("registration-failed-container").style.display = "inline-block";
         })
     </script>
 </html>

@@ -53,6 +53,14 @@ body {
     display: none;
 }
 
+#registration-success-container{
+    display: none;
+}
+
+#registration-failed-container{
+    display: none;
+}
+
 .navigation-panel{
     position: fixed;
     top: 300px;
